@@ -6,3 +6,6 @@
 /NodeJs/csvToJson/node_modules
 /NodeJs/csvToJson/obj
 *.user
+/.vs/edXStuff/v15
+/.vs/slnx.sqlite
+/.vs/config
