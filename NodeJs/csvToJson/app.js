@@ -11,7 +11,7 @@ function method1(infile, callback) {
     csv2json()
         .fromFile(infile)
         .on('end_parsed', function (jsonObjArray) {
-            callback(JSON.stringify(jsonObjArray));
+            callback(JSON.stringify(jsonObjArray, null, 3));
         });
 }
 
@@ -31,7 +31,7 @@ function method2(infile, callback) {
             console.log(err);
             callback("[]");
         }
-        callback(JSON.stringify(result));
+        callback(JSON.stringify(result, null, 3));
         console.log("done");
     });
 }
