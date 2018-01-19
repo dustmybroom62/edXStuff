@@ -1,0 +1,204 @@
+{
+	"id": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+	"name": "RESTful-blog-api",
+	"description": "",
+	"order": [
+		"17dc9150-c747-3175-db65-381ef06ff829",
+		"914b9967-0a6d-ca4d-bb7d-f9f3f3e1d334",
+		"48c6732b-368a-7392-3dd0-7402d5384906",
+		"08040dee-e673-8ba5-c673-9df89161117e",
+		"88c4d9cf-fb25-7ab0-195c-349ac1a28a47",
+		"963b7fd5-bf81-92b2-b486-c01d6036e53f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1516323864864,
+	"owner": 0,
+	"public": false,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "26989385-09a9-4502-8d64-ff4ed7a8f8ae",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "29e610a5-0c66-4a35-8beb-d4106aabecf9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "08040dee-e673-8ba5-c673-9df89161117e",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/posts/0",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1516326505416,
+			"name": "blog post DELETE",
+			"description": "testing node.js express hello world",
+			"collectionId": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "17dc9150-c747-3175-db65-381ef06ff829",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/posts",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1516326469483,
+			"name": "blog post POST",
+			"description": "testing node.js express hello world",
+			"collectionId": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\"name\": \"blog post 01\"\n\t, \"url\":\"http://webapplog.com/es6\"\n\t, \"text\": \"this is blog post 01\"\n\t, \"comments\": [\n\t\t{\"text\": \"post 01, comment 01\"}\n\t\t, {\"text\": \"post 01, comment 02\"}\n\t\t]\n}"
+		},
+		{
+			"id": "48c6732b-368a-7392-3dd0-7402d5384906",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/posts/0",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1516324975356,
+			"name": "blog post PUT",
+			"description": "testing node.js express hello world",
+			"collectionId": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\"name\": \"blog post 01\"\n\t, \"url\":\"http://webapplog.com/es6\"\n\t, \"text\": \"this is blog post 01 updated\"\n}"
+		},
+		{
+			"id": "88c4d9cf-fb25-7ab0-195c-349ac1a28a47",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/accounts/0",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1516319417742,
+			"name": "blog post comment DELETE",
+			"description": "testing node.js express hello world",
+			"collectionId": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"responses": [],
+			"collection_id": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"rawModeData": "",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "914b9967-0a6d-ca4d-bb7d-f9f3f3e1d334",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/posts/1/comments",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1516326420794,
+			"name": "blog post comment POST",
+			"description": "testing node.js express hello world",
+			"collectionId": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\"text\": \"post 02, comment 01\"}"
+		},
+		{
+			"id": "963b7fd5-bf81-92b2-b486-c01d6036e53f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/posts",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1516324351520,
+			"name": "blog posts GET",
+			"description": "testing node.js express hello world",
+			"collectionId": "b3a321a8-a885-70c4-62bd-5a4fbd8463c5",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n    \"username\": \"azat\",\n    \"email\": \"dude02@azat.co\",\n    \"url\": \"http://azat.co\"\n}"
+		}
+	]
+}
