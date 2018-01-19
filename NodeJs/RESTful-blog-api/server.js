@@ -8,7 +8,7 @@ let store = {};
 store.posts = [];
 
 let app = express();
-app.use(bodyParser.json());
+app.use(bodyParser.json({ strict: false }));
 app.use(logger('dev'));
 app.use(errorhandler());
 app.use((req, res, next) => {
